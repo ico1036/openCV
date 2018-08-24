@@ -11,6 +11,9 @@ def showVideo():
 	cap.set(3,480)
 	cap.set(4,320)
 
+	cap.set(cv2.CAP_PROP_POS_FRAMES,300)
+    # 원하는 프레임으로 이동할 수 있다
+
 	while True:
 		ret, frame = cap.read()
 		# 재생되는 비디오를 한 frame씩 읽는다
